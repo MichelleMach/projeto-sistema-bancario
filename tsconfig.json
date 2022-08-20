@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "build",
+        "sourceMap": true, //gera o arquivo correspondente .map
+        "target": "es6", //versao typescript
+        "module": "commonjs",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+    },
+    "include": ["src/**/*"], // indica as pastas que serao incluidas
+    "exclude":  ["node_modules"] //indica pastas que serao excluidas, como por exemplo o node-modules
+    
+}
