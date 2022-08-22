@@ -1,7 +1,7 @@
 export type user = {
     name: string,
     cpf: string,
-    birth: Date ,
+    dateOfBirth: Date | string ,
     balance: number,
     extract: transactions[]
 }
@@ -19,24 +19,24 @@ export const usersList: user[] = [
     {
         name: "Michelle",
         cpf: "123456789",
-        birth: new Date(1997, 12, 3),
-        balance: 0,
+        dateOfBirth: new Date("1997-12-03"),
+        balance: 2500,
         extract: []
     },
 
     {
         name: "Victor",
         cpf: "547638764",
-        birth: new Date(2003, 5, 20),
-        balance: 0,
+        dateOfBirth: new Date("2003-5-20"),
+        balance: 3000,
         extract: []
     },
 
     {
         name: "Rafael",
         cpf: "756392874",
-        birth: new Date(2002, 10, 25),
-        balance: 0,
+        dateOfBirth: new Date("2002-10-25"),
+        balance: 1500,
         extract: []
     }
 ]
